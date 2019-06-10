@@ -1,0 +1,176 @@
+body, html{
+    height: 100%;
+    font-family: 'Source Sans Pro';
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.image{
+    background-image: url("../img/IMG_7420.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.25rem;
+}
+.about{
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background-color: #b5b7b5!important;
+    text-align: center;
+}
+.about span{
+    width: 80%;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.projects{
+    background-color: #b5b7b5!important;
+    text-align: center;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+a img{
+    position:relative;
+    z-index:0;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.content{
+    z-index:1;
+    position: absolute;
+    padding: 20px;
+    height: 100%;
+    background-color: rgba(33,37,41,.2);
+}
+.projects a{
+    padding: 0;
+}
+.experience img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    padding: 1px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+.experience{
+    text-align: center!important;
+}
+.service-icon{
+    border-radius: 100%;
+}
+.experience .row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row a{
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+section{
+    text-align: center;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+.row{
+    display: flex;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text_content{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.contact{
+    background: #b5b7b5;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    .container {
+      font-size: 20px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .container {
+      font-size: 12px;
+    }
+  }
+  .menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52,58,64,.5);
+    line-height: 50px;
+    z-index: 999;
+}
+#sidebar-wrapper {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    background: #666;
+    border-left: 1px solid rgba(255,255,255,.1);
+}
+.menu-toggle:hover {
+    background: #343a40;
+}
+.menu-toggle:focus, .menu-toggle:hover {
+    color: #fff;
+}
+a:active, a:focus, a:hover {
+    color: #155d74;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52,58,64,.5);
+    line-height: 50px;
+    z-index: 999;
+}
+.link {
+    position: relative;
+    top: -300px!important;
+    border: 2px solid #d9e3e4;
+    padding: 5px 10px;
+    border-radius: 7px;
+    align-self: center;
+    color: #d9e3e4;
+    text-decoration: none;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
