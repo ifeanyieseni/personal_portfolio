@@ -19,36 +19,38 @@
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-  <script src="js/src.js"></script>
 
 </head>
 <body>
-<!-- <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: Website'; 
-    $to = 'amac'; 
-    $subject = 'Hello';
-    $human = $_POST['human'];
-    $output = '';
-			
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-				
-    if ($_POST['submit'] && $human == '4') {				 
-        if (mail ($to, $subject, $body, $from)) {
-	      output = '<p>Your message has been sent!</p>';
-	} else { 
-        output = '<p>Something went wrong, go back and try again!</p>'; 
-	} 
-    } else if ($_POST['submit'] && $human != '4') {
-      output = '<p>You answered the anti-spam question incorrectly!</p>';
-    }
-?> -->
+<?php
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $from = 'From: MacVincet.com'; 
+  $to = 'macvincent.macvincent.com'; 
+  $subject = 'Website Comment';
+  $output = 'Email sent';
+  $headers = 'From: MacVincent@macvincent.com' . "\r\n" .
+  'Reply-To: MacVincent@macvincent.com' . "\r\n" .
+  'X-Mailer: PHP/' . phpversion();
+    
+  $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+      
+  if (strlen(email) != 0 || strlen(name)!=0 &&  $_POST['submit']) {				 
+      if (mail ($to, $subject, $body, $headers)) {
+      $output = '<p>Your message has been sent!</p>';
+} else { 
+      $output = '<p>Something went wrong, go back and try again!</p>'; 
+} 
+  } else if ($_POST['submit']) {
+    $output = '<p>You answered the anti-spam question incorrectly!</p>';
+  }
+?>
   <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
+    <span class="fas fa-bars">&#9776</span>
   </a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
@@ -114,25 +116,39 @@
         <p>Press Club | Assistant Head Boy | Debate Club</p>
     </div>
   </section>
-  <div class="projects text_content" id="portfolio">
-    <h2 class="col-lg-12">Projects</h2>
-    <div class="row">
-        <a href="" class="col-lg-6 container text-center">
-            <div class="content">
+  <section class="content-section projects" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/macvincent/CppND-Route-Planning-Project">
+          <span class="caption">
+              <span class="caption-content">
                 <h1>Route-Planning-App</h1>
-                <p><strong>Made use of the C++ IO2D library to render a 2D model of a map showing the shortest path between two nodes in the map. The shortest path was found using the A* path-finding algorithm and the map was gotten using OpenStreet Map data. This project was one of the projects completed for the Udacity C++ Nanodegree.</strong></p>
-            </div>
-            <img src="img/map.png" alt="A map showing the shortest path between two points">
-        </a>
-        <a href="" class="col-lg-6 container text-center">
-            <div class="content">
-                <h1>Robot_Hand_Prototype</h1>
-                <p><strong>The Arduino Controlled Robot Hand Prototype was a project for my CSC225 Digital Logic Design class. We made use of an Arduino, DC motors, and an L923D IC to control the speed and direction of the robotic fingers.</strong></p>
-            </div>
-            <img src="img/robot.jpg" alt="A robot hand">
-        </a>
+                <p class="mb-0"><strong>Made use of the C++ IO2D library to render a 2D model of a map showing the shortest path between two nodes in the map. The shortest path was found using the A* path-finding algorithm and the map was gotten using OpenStreet Map data. 
+                This project was one of the projects completed for the Udacity C++ Nanodegree.</strong></p>
+              </span>
+          </span>
+          <img class="img-fluid" src="img/map.png" alt="A map showing the shortest path between two points">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/macvincent/Aduino_Controlled_Robot_Hand_Prototype">
+            <span class="caption">
+              <span class="caption-content">
+                <h1 style="color:white;">Robot_Hand_Prototype</h1>
+                <p class="mb-0" style="color:white;"><strong>The Arduino Controlled Robot Hand Prototype was a project for my CSC225 Digital Logic Design class. We made use of an Arduino, DC motors, and an L923D IC to control the speed and direction of the robotic fingers.</strong></p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/robot.jpg" alt="A robot hand">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+  
   <section class="experience text_content" id="experience">
         <h2>Relevant Experience</h2>
         <div class="row">
@@ -186,10 +202,10 @@
     </section>
   <section class="contact" id="contact">        
     <h2>Contact</h2>
-    <div class="tweet col-sm-3" >
+    <!-- <div class="tweet col-sm-3" >
       <a class="twitter-timeline" data-width="300" data-height="450" data-link-color="#2B7BB9" href="https://twitter.com/macvincent5?ref_src=twsrc%5Etfw">Tweets by macvincent5</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <form class="col-sm-6">
+    </div> -->
+    <form>
         <label>Name</label>
         <input name="name" placeholder="Type Here">
                 
@@ -204,9 +220,10 @@
             echo $output;
             ?>
     </form>
-    <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
       <iframe width="300" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=claflin%20university&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="1" marginwidth="1"></iframe>
-    </div>
+    </div> -->
   </section>
+  <script src="js/src.js"></script>
 </body>
 </html>
