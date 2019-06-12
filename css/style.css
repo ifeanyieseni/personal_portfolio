@@ -201,6 +201,8 @@ textarea {
 form{
     border:1px solid #dedede;
     padding: 12px;
+    border-radius: 10px;
+    margin: auto;
 }
 input:focus, textarea:focus {
     border:1px solid #97d6eb;
