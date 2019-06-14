@@ -9,19 +9,27 @@
     $(this).toggleClass("active");
   });
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
+  // // Smooth scrolling using jQuery easing
+  // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  //     if (target.length) {
+  //       $('html, body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 1000, "easeInOutExpo");
+  //       return false;
+  //     }
+  //   }
+  // });
+  $(function () {
+    $('a[href*="#"]').click(function () {
+       var $target = $(this.hash);
+       $target = $target.length ? $target : $('html');
+       var targetOffset = $target.offset().top;
+       $('html,body').animate({scrollTop: targetOffset}, {duration: 1600, easing: 'easeInBounce'});
+    });
+});
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {

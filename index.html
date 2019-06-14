@@ -25,30 +25,6 @@
 
 </head>
 <body>
-<?php
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  $from = 'From: MacVincet.com'; 
-  $to = 'macvincent.macvincent.com'; 
-  $subject = 'Website Comment';
-  $output = 'Email sent';
-  $headers = 'From: MacVincent@macvincent.com' . "\r\n" .
-  'Reply-To: MacVincent@macvincent.com' . "\r\n" .
-  'X-Mailer: PHP/' . phpversion();
-    
-  $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-      
-  if (strlen(email) != 0 || strlen(name)!=0 &&  $_POST['submit']) {				 
-      if (mail ($to, $subject, $body, $headers)) {
-      $output = '<p>Your message has been sent!</p>';
-} else { 
-      $output = '<p>Something went wrong, go back and try again!</p>'; 
-} 
-  } else if ($_POST['submit']) {
-    $output = '<p>You answered the anti-spam question incorrectly!</p>';
-  }
-?>
   <a class="menu-toggle rounded" href="#">
     <span class="fas fa-bars">&#9776</span>
   </a>
@@ -205,6 +181,24 @@
     <!-- <div class="tweet col-sm-3" >
       <a class="twitter-timeline" data-width="300" data-height="450" data-link-color="#2B7BB9" href="https://twitter.com/macvincent5?ref_src=twsrc%5Etfw">Tweets by macvincent5</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div> -->
+    <?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: Portfolio Website'; 
+    $to = 'macvincentaghaoko@gmail.com'; 
+    $subject = 'Website POST';
+			
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+				
+    if ($_POST['submit']) {				 
+        if (mail ($to, $subject, $body, $from)) { 
+	    echo '<p>Your message has been sent!</p>';
+	} else { 
+	    echo '<p>Something went wrong, go back and try again!</p>'; 
+  }
+}
+?>
     <form>
         <label>Name</label>
         <input name="name" placeholder="Type Here">

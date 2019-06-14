@@ -307,7 +307,7 @@ input:focus, textarea:focus {
     font-size: 1.2rem;
   }
   
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     .portfolio-item {
       max-width: none;
       margin: 0;
@@ -337,5 +337,14 @@ input:focus, textarea:focus {
       background-color: rgba(29, 128, 159, 0.9);
       -webkit-clip-path: inset(2rem);
       clip-path: inset(2rem);
+    }
+    .portfolio-item .caption .caption-content h2 {
+      font-size: 0.5rem;
+      text-transform: uppercase;
+    }
+    
+    .portfolio-item .caption .caption-content p {
+      font-weight: 150;
+      font-size: 0.6rem;
     }
   }
