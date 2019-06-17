@@ -367,3 +367,10 @@ textarea {
     height:35px;
   }
 }
+textarea.error, input.error{
+border: 1px solid red !important;
+}
+.error{
+color:white;
+width: 100%;
+}

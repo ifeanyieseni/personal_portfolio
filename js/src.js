@@ -36,4 +36,22 @@ $(function () {
     }
   });
 
+  $("form[name='feedback']").validate({
+    rules: {
+      name: "required",
+      message: "required",
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: "Please enter your name",
+      email: "Please enter a valid email address"
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+});
+
 })(jQuery); // End of use strict
