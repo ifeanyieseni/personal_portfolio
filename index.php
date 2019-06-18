@@ -178,9 +178,6 @@
     </section>
   <section class="contact text_content" id="contact">        
     <h2>Contact</h2>
-    <!-- <div class="tweet col-sm-3" >
-      <a class="twitter-timeline" data-width="300" data-height="450" data-link-color="#2B7BB9" href="https://twitter.com/macvincent5?ref_src=twsrc%5Etfw">Tweets by macvincent5</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div> -->
     <form method="POST" name="feedback">
         <label>Name</label>
         <input name="name" placeholder="Type Here">
@@ -225,10 +222,8 @@
       return $data;
 	}
 ?>
-    <!-- <div class="col-sm-3">
-      <iframe width="300" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=claflin%20university&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="1" marginwidth="1"></iframe>
-    </div> -->
   </section>
+  <footer>Created by MacVincent™️</footer>
   <script src="js/src.js"></script>
   <script>
   	<?php if ($_POST['submit']) echo '$([document.documentElement, document.body]).animate({

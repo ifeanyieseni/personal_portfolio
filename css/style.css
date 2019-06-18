@@ -278,7 +278,6 @@ input:focus, textarea:focus {
   max-width: 530px;
   margin: auto auto 1rem;
 }
-
 .portfolio-item .caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,8 +305,7 @@ input:focus, textarea:focus {
   font-weight: 300;
   font-size: 1.2rem;
 }
-
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
@@ -338,14 +336,6 @@ input:focus, textarea:focus {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
-  .portfolio-item .caption .caption-content h2 {
-    font-size: 0.5rem;
-    text-transform: uppercase;
-  }
-  .portfolio-item .caption .caption-content p {
-    font-weight: 150;
-    font-size: 0.6rem;
-  }
 }
 @media (max-width: 992px) {
 form {
@@ -373,4 +363,10 @@ border: 1px solid red;
 .error{
 color:white;
 width: 100%;
+}
+footer{
+  background-color: #b5b7b5;
+  text-align: center;
+  padding: 20px;
+  color: #666;
 }
