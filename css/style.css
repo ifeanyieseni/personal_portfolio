@@ -368,7 +368,7 @@ textarea {
   }
 }
 textarea.error, input.error{
-border: 1px solid red !important;
+border: 1px solid red;
 }
 .error{
 color:white;

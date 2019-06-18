@@ -26,7 +26,7 @@
 </head>
 <body>
   <a class="menu-toggle rounded" href="#">
-    <span class="fas fa-bars">&#9776</span>
+    <span>&#9776</span>
   </a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
@@ -181,7 +181,7 @@
     <!-- <div class="tweet col-sm-3" >
       <a class="twitter-timeline" data-width="300" data-height="450" data-link-color="#2B7BB9" href="https://twitter.com/macvincent5?ref_src=twsrc%5Etfw">Tweets by macvincent5</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div> -->
-    <form method="POST" name="feedback" action="index.php">
+    <form method="POST" name="feedback">
         <label>Name</label>
         <input name="name" placeholder="Type Here">
                 
@@ -207,14 +207,14 @@
 			
     $body = "From: $name\nE-Mail: $email\nMessage:\n $message";
     $reply = "Thank you $name for reaching out. I would get back to you shortly.\nMacVincent Agha-Oko";
-	echo $name;
+	echo "<p class='error'> $name ";
     if ($_POST['submit']) {
       if (mail ($to, $subject, $body, $headers)) { 
         if(mail($email, "Opinion Feedback", $reply, $headers)){
-              echo '<p> Your message has been sent!</p>';
+              echo ' your message has been sent!</p>';
         }
       } else { 
-          echo '<p>Something went wrong, go back and try again!</p>'; 
+          echo 'something went wrong, go back and try again!</p>'; 
       }
 	}
     
