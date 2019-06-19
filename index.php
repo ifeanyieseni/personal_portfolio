@@ -51,6 +51,9 @@
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">Contact</a>
       </li>
+      <li class="sidebar-nav-item" id="git">
+        <a href="https://github.com/macvincent" target="#">Github</a>
+      </li>
     </ul>
   </nav>
   <section class="image" id="image">
