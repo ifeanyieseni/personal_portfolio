@@ -50,8 +50,8 @@ a img{
   padding: 0;
 }
 .experience img{
-  width: 150px;
-  height: 150px;
+  width: 107px;
+  height: 108px;
   border-radius: 150px;
   background-size: 55% 55%;
   box-shadow: 0 0 2px rgba(0, 0, 0, .8);
@@ -90,10 +90,14 @@ section{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
 }
 .text_content{
   padding-left: 20%;
   padding-right: 20%;
+}
+.text_content div{
+  padding-bottom: 20px;
 }
 .contact{
   background: #b5b7b5;
