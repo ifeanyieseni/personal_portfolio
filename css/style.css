@@ -1,9 +1,8 @@
 body, html{
   height: 100%;
   font-family: 'Source Sans Pro';
-  line-height: 1.5;
-  font-size: 1rem;
-  font-weight: 400;
+  line-height: 1.5!important;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #212529;
 }
@@ -51,16 +50,20 @@ a img{
   padding: 0;
 }
 .experience img{
-  height: 7rem;
-  width: 7rem;
-  border-radius: 10%;
-  text-align: center;
-  line-height: 100px;
-  padding: 1px;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-size: 55% 55%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .8);
+  background-repeat: no-repeat;
+  background-color: white;
 }
-.experience{
-  text-align: center!important;
+.experience h6{
+  font-weight: bold;
+  font-size: 1em;
+}
+div.text{
+  padding-right: 30px;
 }
 .service-icon{
   border-radius: 100%;
@@ -292,16 +295,17 @@ input:focus, textarea:focus {
 }
 
 .portfolio-item .caption .caption-content {
-  color: #fff;
   margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+.portfolio-item .caption .caption-content h1 {
+  font-size: 1rem;
   text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
-.portfolio-item .caption .caption-content p {
+.portfolio-item .caption .caption-content p{
   font-weight: 300;
   font-size: 1.2rem;
 }
