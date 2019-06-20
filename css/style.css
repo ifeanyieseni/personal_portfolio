@@ -12,7 +12,11 @@ body, html{
   background:url("../img/img-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .image {
+ 	 background-position: center;
+  }
 }
 .about{
   padding-top: 7.5rem;
