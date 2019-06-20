@@ -7,12 +7,16 @@ body, html{
   color: #212529;
 }
 .image{
-  background-image: url("../img/img-min.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: grey;
+  background:url("../img/img-min.jpg");
   background-size: cover;
-  font-size: 1.25rem;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 800px) {
+  .image {
+ 	 background-position: center;
+  }
 }
 .about{
   padding-top: 7.5rem;
