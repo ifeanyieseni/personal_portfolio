@@ -48,5 +48,18 @@ $('.js-scroll-trigger').click(function () {
       form.submit();
     }
 });
+ // Scroll to top button appear
+ $(document).scroll(function() {
+  var scrollDistance = $(this).scrollTop();
+  if (scrollDistance > 300) {
+    $('#button').fadeIn();
+  } else {
+    $('#button').fadeOut();
+  }
+});
+$('#button').on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '800');
+});
 
 })(jQuery); // End of use strict
