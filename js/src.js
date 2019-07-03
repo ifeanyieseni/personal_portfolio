@@ -38,6 +38,7 @@ $('.js-scroll-trigger').click(function () {
     }
 });
  // Scroll to top button appear
+ $('#button').fadeOut();
  $(document).scroll(function() {
   var scrollDistance = $(this).scrollTop();
   if (scrollDistance > 300) {
