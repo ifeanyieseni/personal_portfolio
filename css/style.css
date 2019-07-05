@@ -118,6 +118,9 @@ section{
   .container {
     font-size: 12px;
   }
+  .LI-profile-badge{
+    display:none;
+  }
 }
 .menu-toggle:hover {
   background: #343a40;
