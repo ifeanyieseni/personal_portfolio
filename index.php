@@ -24,6 +24,7 @@
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -63,6 +64,7 @@
       <li class="sidebar-nav-item" id="git">
         <a href="https://github.com/macvincent" target="#">Github</a>
       </li>
+      <li><div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="amacvincent"><a class="LI-simple-link" href='https://www.linkedin.com/in/amacvincent?trk=profile-badge'>MacVincent Agha-Oko</a></div></li>
     </ul>
   </nav>
   <section class="image" id="image">
