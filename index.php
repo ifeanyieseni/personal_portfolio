@@ -168,6 +168,23 @@
         <h2>Relevant Experience</h2>
         <div class="row">
           <div class="col-lg-4">
+              <img src="img/ub.jpg">
+          </div>
+          <div class="col-lg-4">
+            <h6><em>Tutor Counsellor - Math</em></h6>
+            <h4>Claflin University Upward Bound Program </h4>
+            <h6> Orangeburg, South Carolina </h6>
+          </div>
+          <div class="col-lg-4 text">
+            <span>
+              Worked with High School students around the Orangeburg County area towards developing an attitude of high expectations regarding college preparation and readiness. 
+              Provided personal guidance, mentorship, and support to a group of 5 wonderful High school students. 
+              And also assisted with general Math instruction
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
               <img src="img/nsbe.png">
           </div>
           <div class="col-lg-4">
@@ -196,22 +213,6 @@
             <span> 
               Successfully led the planning committee for the 2017 Student Professional Awareness Conference (SPAC). Managed the social media handles of the Student Branch and ensured publicity for our activities. Aided with C++, Arduino Micro-Controllers and Web Development instruction. In charge of recruiting efforts that led to a massive increase in membership
             </span>
-          </div>
-        </div>
-         <div class="row">
-          <div class="col-lg-4">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <img src="img/ja.jpg">
-            </span>
-          </div>
-          <div class="col-lg-4">
-            <h6><em>Community Volunteer</em></h6>
-            <h4>Junior Achievement</h4>
-            <h6> Orangeburg, South Carolina </h6>
-          </div>
-          <div class="col-lg-4 text">
-            <span>
-            Represented Junior Achievement USA at elementary schools. Students were introduced to the basics of Financial Literacy</span>
           </div>
         </div>
     </section>
