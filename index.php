@@ -74,8 +74,8 @@
     <a class="js-scroll-trigger link" href="#about">Learn More</a>
     <h2>About</h2>
     <span>
-      My name is MacVincent Agha-Oko. I am an undergraduate Computer Engineering student at Claflin University, Orangeburg South Carolina. While I am currently a freshman, I hope to one day become a researcher focused on the development of robotic technology. And Coming from a beautiful community with very few opportunities, I am committed to ultimately changing the face of the African Tech Industry.
-    </span>
+      Coming from a beautiful community with lots of talent and very few opportunities, I am committed to the sole purpose of changing the face of the African Tech space, to ensure every dream is given the opportunity to thrive and that location never constitutes a limiter or boundary to the achievements of the African child. 
+      As a Computer Engineering Major, I am currently focused on developing the skill set necessary for success in the tech industry. Whether it's through working with multi-threaded C++ systems or volunteering with the local NSBE branch, I remain committed to that overreaching goal of growth. And as a direct consequence, I am open to volunteering, Internship and learning opportunities.    </span>
   </section>
   <section class="education text_content" id="education">
     <h2>Education</h2>
@@ -111,6 +111,30 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/macvincent/City-Planner">
+          <span class="caption">
+              <span class="caption-content">
+                <h1 style="color:black;">City Planner</h1>
+                <p class="mb-0"><strong>Programmed a multi-threaded traffic simulation showing vehicular movement in a real-world city. Visualized a 2D model of the live simulation by making use of the OpenCV library</strong></p>
+              </span>
+          </span>
+          <img class="img-fluid" src="img/map.png" alt="A map showing vehicular traffic">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/macvincent/CppND-System-Monitor">
+            <span class="caption" style="color:white;">
+              <span class="caption-content">
+                <h1>System Monitor</h1>
+                <p class="mb-0"><strong>Makes use of the ncurses library to build an interactive system-monitor process-viewer for a Linux system. It displays information about memory and CPU utilization, much similar to the Htop application. This project was one of those completed as part of my Udacity C++ Nanodegree program.</strong></p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/system_monitor.png" alt="A robot hand">
+          </a>
+        </div>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
