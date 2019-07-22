@@ -116,12 +116,12 @@
         <div class="col-lg-6">
           <a class="portfolio-item" href="https://github.com/macvincent/City-Planner">
           <span class="caption">
-              <span class="caption-content">
-                <h1 style="color:black;">City Planner</h1>
+              <span class="caption-content"  style="font-weight: 900; color: #f2f2f2;">
+                <h1>City Planner</h1>
                 <p class="mb-0"><strong>Programmed a multi-threaded traffic simulation showing vehicular movement in a real-world city. Visualized a 2D model of the live simulation by making use of the OpenCV library</strong></p>
               </span>
           </span>
-          <img class="img-fluid" src="img/map.png" alt="A map showing vehicular traffic">
+          <img class="img-fluid" src="img/city_planner.png" alt="A map showing vehicular traffic">
           </a>
         </div>
         <div class="col-lg-6">
