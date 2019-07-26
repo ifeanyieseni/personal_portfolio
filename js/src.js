@@ -23,6 +23,7 @@
 
   //Check validity of form info using regEx
   $('#submit').click(function(e){
+    $('p.error').remove();
     let regTest = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
     let email = regTest.test($("#email").val());
     if(!email){
@@ -43,7 +44,7 @@
       $('#message').addClass('error');
       $('#message').after('<p class = "error">Message box can\'t be empty!</p>')
     }else $('#message').removeClass('error');
-    
+
     if(!(name && message && email))e.preventDefault();
   });
 
