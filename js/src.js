@@ -20,23 +20,9 @@ $('.js-scroll-trigger').click(function () {
     $("#sidebar-wrapper").removeClass("active");
     $(".menu-toggle").removeClass("active");
   });
-  $("form[name='feedback']").validate({
-    rules: {
-      name: "required",
-      message: "required",
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    messages: {
-      name: "Please enter your name",
-      email: "Please enter a valid email address"
-    },
-    submitHandler: function(form) {
-      form.submit();
-    }
-});
+  $("form[name='feedback']"){
+    
+  }
  // Scroll to top button appear
  $('#button').fadeOut();
  $(document).scroll(function() {
