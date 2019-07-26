@@ -19,10 +19,9 @@
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/min_style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="js/jquery-3.4.1.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
 <script>
@@ -219,17 +218,17 @@
     <h2>Contact</h2>
     <form method="POST" name="feedback">
         <label>Name</label>
-        <input name="name" placeholder="Type Here">
+        <input name="name" id="name" placeholder="Type Here">
                 
         <label>Email</label>
-        <input name="email" type="email" placeholder="Type Here">
+        <input name="email" id="email" type="email" placeholder="Type Here">
                 
         <label>Message</label>
-        <textarea name="message" placeholder="Type Here"></textarea>
+        <textarea name="message" id="message" placeholder="Type Here"></textarea>
                 
         <input id="submit" name="submit" type="submit" value="Submit">
     </form>
- <?php
+ <!-- <?php
     $name = test_input($_POST['name']);
     $email = test_input($_POST['email']);
     $message = test_input($_POST['message']);
@@ -260,15 +259,15 @@
       $data = htmlspecialchars($data);
       return $data;
 	}
-?>
+?> -->
   </section>
   <footer>Created by MacVincent™️</footer>
   <script src="js/src.js"></script>
   <script>
-  	<?php if ($_POST['submit']) echo '$([document.documentElement, document.body]).animate({
-        scrollTop: $("form").offset().top
-    }, 2000);
-    alert("Your message has been sent");'; ?>
+  	// <?php if ($_POST['submit']) echo '$([document.documentElement, document.body]).animate({
+    //     scrollTop: $("form").offset().top
+    // }, 2000);
+    // alert("Your message has been sent");'; ?>
   </script>
 </body>
 </html>

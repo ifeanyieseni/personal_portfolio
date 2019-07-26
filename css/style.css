@@ -375,9 +375,8 @@ textarea {
 textarea.error, input.error{
 border: 1px solid red;
 }
-.error{
-color:white;
-width: 100%;
+textarea.error:focus, input.error:focus{
+  border: 1px solid white!important;
 }
 footer{
   background-color: #b5b7b5;
