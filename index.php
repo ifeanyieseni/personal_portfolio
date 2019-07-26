@@ -20,18 +20,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-  <script src="js/jquery-3.4.1.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-142448634-1');
-</script>
-
 </head>
 <body>
   <a class="menu-toggle rounded" href="#">
@@ -43,7 +31,15 @@
         <a class="js-scroll-trigger" href="#image">MacVincent Agha-Oko</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#image">Home</a>
+        <a class="js-scroll-trigger" hre<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'UA-142448634-1');
+          </script>
+          f="#image">Home</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#about">About</a>
@@ -228,7 +224,7 @@
                 
         <input id="submit" name="submit" type="submit" value="Submit">
     </form>
- <!-- <?php
+ <?php
     $name = test_input($_POST['name']);
     $email = test_input($_POST['email']);
     $message = test_input($_POST['message']);
@@ -259,15 +255,25 @@
       $data = htmlspecialchars($data);
       return $data;
 	}
-?> -->
+?>
   </section>
   <footer>Created by MacVincent™️</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/src.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
   <script>
-  	// <?php if ($_POST['submit']) echo '$([document.documentElement, document.body]).animate({
-    //     scrollTop: $("form").offset().top
-    // }, 2000);
-    // alert("Your message has been sent");'; ?>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142448634-1');
+  </script>
+  <script>
+  	<?php if ($_POST['submit']) echo '$([document.documentElement, document.body]).animate({
+        scrollTop: $("form").offset().top
+    }, 2000);
+    alert("Your message has been sent");'; ?>
   </script>
 </body>
 </html>

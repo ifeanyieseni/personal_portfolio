@@ -378,6 +378,9 @@ border: 1px solid red;
 textarea.error:focus, input.error:focus{
   border: 1px solid white!important;
 }
+.error{
+  color: whitesmoke;
+}
 footer{
   background-color: #b5b7b5;
   text-align: center;
