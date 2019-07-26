@@ -31,15 +31,7 @@
         <a class="js-scroll-trigger" href="#image">MacVincent Agha-Oko</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" hre<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'UA-142448634-1');
-          </script>
-          f="#image">Home</a>
+        <a class="js-scroll-trigger" href="#image">Home</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#about">About</a>
@@ -122,7 +114,14 @@
           <a class="portfolio-item" href="https://github.com/macvincent/CppND-System-Monitor">
             <span class="caption" style="color:white;">
               <span class="caption-content">
-                <h1>System Monitor</h1>
+                <h1>System Monitor</h1><script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'UA-142448634-1');
+          </script>
                 <p class="mb-0"><strong>Makes use of the ncurses library to build an interactive system-monitor process-viewer for a Linux system. It displays information about memory and CPU utilization, much similar to the Htop application. This project was one of those completed as part of my Udacity C++ Nanodegree program.</strong></p>
               </span>
             </span>
@@ -258,6 +257,15 @@
 ?>
   </section>
   <footer>Created by MacVincent™️</footer>
+  <!-- Js Scripts -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'UA-142448634-1');
+          </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/src.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
