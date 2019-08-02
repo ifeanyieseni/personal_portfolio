@@ -52,10 +52,12 @@
   $('#button').fadeOut();
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 300) {
+    if (scrollDistance > 400) {
       $('#button').fadeIn();
+      $('nav').addClass('shaded');
     } else {
       $('#button').fadeOut();
+      $('nav').removeClass('shaded');
     }
   });
   $('#button').on('click', function(e) {
