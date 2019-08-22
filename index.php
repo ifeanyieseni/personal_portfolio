@@ -174,6 +174,19 @@
           </a>
         </div>
       </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/macvincent/CppND-Route-Planning-Project">
+          <span class="caption">
+              <span class="caption-content" style="color:black; font-weight: 400;">
+                <h1 >NewsRoom</h1>
+                <p class="mb-0"><strong>Designed and developed a Django-based web app that allow users analyze the latest news stories. The goal of the app was to combat disinformation by crowd-sourcing news analysis</strong></p>
+              </span>
+          </span>
+          <img class="img-fluid" src="img/newsroom.jpg" alt="A map showing the shortest path between two points">
+          </a>
+        </div>
+      </div>
     </div>
   </section>
   
