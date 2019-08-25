@@ -176,7 +176,7 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/macvincent/CppND-Route-Planning-Project">
+          <a class="portfolio-item" href="https://newsroom22.herokuapp.com/">
           <span class="caption">
               <span class="caption-content" style="color:black; font-weight: 400;">
                 <h1 >NewsRoom</h1>
