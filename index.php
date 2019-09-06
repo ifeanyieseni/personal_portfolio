@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Hi, I am MacVincent Agha-Oko</title>
+  <title>Hi, I am MacVincent Agha-Oko. I love God, family, and country. I am a software developer with plans to one day change the face of the African tech industry.</title>
   <link rel="icon" type="image/jpg" href="img/br.jpg" />
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -265,12 +265,12 @@
     'From' => 'MacVincent',
     'Reply-To' => 'macvincent@macvincent.com',
     'X-Mailer' => 'PHP/' . phpversion()
-);  $to = 'macvincentaghaoko@gmail.com'; 
+    );  
+    $to = 'macvincentaghaoko@gmail.com'; 
     $subject = 'MacVincent.com';
 			
     $body = "From: $name\nE-Mail: $email\nMessage:\n $message";
     $reply = "Thank you $name for reaching out. I would get back to you shortly.\nMacVincent Agha-Oko";
-	echo "<p class='error'> $name ";
     if ($_POST['submit']) {
       if (mail ($to, $subject, $body, $headers)) { 
         if(mail($email, "Opinion Feedback", $reply, $headers)){
@@ -281,7 +281,7 @@
       }
 	}
     
-    function test_input($data) {
+  function test_input($data) {
       $data = trim($data);
       $data = stripslashes($data);
       $data = htmlspecialchars($data);
@@ -305,10 +305,9 @@
       gtag('config', 'UA-142448634-1');
     </script>
     <script>
-  <?php if ($_POST['submit']) echo '$([document.documentElement, document.body]).animate({
-      scrollTop: $("form").offset().top
-  }, 2000);
-  alert("Your message has been sent");'; ?>
+    <?php if ($_POST['submit'])
+      echo '$([document.documentElement, document.body]).animate({scrollTop: $("form").offset().top}, 2000);alert("Your message has been sent");';
+    ?>
   </script>
 </body>
 </html>
