@@ -90,9 +90,11 @@ li a:hover, a:active{
   position: absolute;
   padding-left: 20px;
 }
-h2{
+h2 a, h2 a:hover, h2 a:active{
   font-family: 'Saira Stencil One', cursive;
   font-size: 35px;
+  text-decoration: none;
+  color: black;
 }
 /* About */
 .about{

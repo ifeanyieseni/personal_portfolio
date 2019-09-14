@@ -66,7 +66,7 @@
         <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
       </li>
       <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#experience">Experience</a>
+        <a class="js-scroll-trigger" href="#experience">Experience</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">Contact</a>
@@ -82,14 +82,14 @@
   <section class="image" id="image">
   </section>
   <section class="about text_content" id="about">
-    <h2>About</h2>
+    <h2><a class="js-scroll-trigger" href="#about">About</a></h2>
     <span>
-      Coming from a beautiful community with lots of talent and very few opportunities, I am committed to the sole purpose of changing the face of the African Tech space, to ensure every dream is given the opportunity to thrive and that location never constitutes a limiter or boundary to the achievements of the African child. 
-      As a Computer Engineering Major, I am currently focused on developing the skill set necessary for success in the tech industry. Whether it's through working with multi-threaded C++ systems or volunteering with the local NSBE branch, I remain committed to that overreaching goal of growth. And as a direct consequence, I am open to volunteering, Internship and learning opportunities.
+    <!-- Coming from a beautiful community with lots of talent and very few opportunities, I am committed to the sole purpose of changing the face of the African Tech space, to ensure every dream is given the opportunity to thrive and that location never constitutes a limiter or boundary to the achievements of the African child. -->
+    As a Computer Engineering Major, I am currently focused on developing the skill set necessary for success in the tech industry. Whether it's through working with multi-threaded C++ systems or volunteering with the local NSBE branch, I remain committed to that overreaching goal of growth. And as a direct consequence, I am open to volunteering, Internship and learning opportunities.
     </span>
   </section>
   <section class="education text_content" id="education">
-    <h2>Education</h2>
+    <h2><a class="js-scroll-trigger" href="#education">Education</a></h2>
     <div>
       <img src="img/claflin.png" alt="CLAFLIN LOGO">
       <div class="description">
@@ -97,11 +97,9 @@
           Claflin University
         </h4>
         <h5>
-          Candidate for Bachelor in Computer Engineering
+          Candidate for Bachelors in Computer Engineering
         </h5>
-        <h6><em><strong>Presidential Scholar The Alice Tisdale Honor's College</strong></em></h6>
         <h6>2018 - 2022</h6>
-        <h6><strong>GPA: 4.0/4.0 </strong></h6>
         <h6><strong>Relevant Coursework: Introduction to Object Oriented Programming | Digital Logic Design | Discrete Mathematics | Algorithms and Data Structures | Computer Organization and Architecture</h6>
       </div>
     </div>
@@ -123,7 +121,7 @@
   <section class="content-section projects" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h2 class="mb-5">Recent Projects</h2>
+        <h2 class="mb-5"><a class="js-scroll-trigger" href="#portfolio">Recent Projects</a></h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
@@ -191,7 +189,7 @@
   </section>
   
   <section class="experience" id="experience">
-        <h2>Relevant Experience</h2>
+        <h2><a class="js-scroll-trigger" href="#experience">Relevant Experience</a></h2>
         <div class="row">
           <div class="col-lg-4">
               <img src="img/ub.jpg">
@@ -243,19 +241,21 @@
         </div>
     </section>
   <section class="contact" id="contact">        
-    <h2>Contact</h2>
-    <form method="POST" name="feedback">
-        <label>Name</label>
-        <input name="name" id="name" placeholder="John Doe">
-                
-        <label>Email</label>
-        <input name="email" id="email" type="email" placeholder="abc@example.com">
-                
-        <label>Message</label>
-        <textarea name="message" id="message" placeholder="Insert message..."></textarea>
-                
-        <input id="submit" name="Send" type="submit" value="Send">
-    </form>
+    <h2><a class="js-scroll-trigger" href="#contact">Contact</a></h2>
+    <div>
+        <form method="POST" name="feedback">
+            <label>Name</label>
+            <input name="name" id="name" placeholder="John Doe">
+                    
+            <label>Email</label>
+            <input name="email" id="email" type="email" placeholder="abc@example.com">
+                    
+            <label>Message</label>
+            <textarea name="message" id="message" placeholder="Insert message..."></textarea>
+                    
+            <input id="submit" name="Send" type="submit" value="Send">
+        </form>
+    </div>
  <?php
     $name = test_input($_POST['name']);
     $email = test_input($_POST['email']);
