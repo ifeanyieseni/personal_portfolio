@@ -79,6 +79,7 @@ li a:hover, a:active{
   text-decoration: none;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid white;
 }
 .shaded{
   background: rgba(52, 58, 64, 0.7);
