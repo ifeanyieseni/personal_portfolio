@@ -110,9 +110,12 @@
           Federal Government Boys' College
         </h4>
         <h5>
+          The West African Senior School Certificate Examination (WASSCE) 2016
+        </h5>
+        <!-- <h5>
           Best Graduating Student
         </h5>
-        <h6><em><strong>Senior Prefect</strong></em></h6>
+        <h6><em><strong>Senior Prefect</strong></em></h6> -->
         <h6>2010 - 2016</h6>
         <h6><strong>Activities: Press Club | Nigerian Model United Nations Society | Debate Club</h6>
       </div>
@@ -161,19 +164,6 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/macvincent/Aduino_Controlled_Robot_Hand_Prototype">
-            <span class="caption" style="color:white;">
-              <span class="caption-content">
-                <h1>Robot_Hand_Prototype</h1>
-                <p class="mb-0"><strong>The Arduino Controlled Robot Hand Prototype was a project for my CSC225 Digital Logic Design class. We made use of an Arduino, DC motors, and an L923D IC to control the speed and direction of the robotic fingers.</strong></p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/robot.jpg" alt="A robot hand">
-          </a>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
           <a class="portfolio-item" href="https://newsroom22.herokuapp.com/">
           <span class="caption">
               <span class="caption-content" style="color:black; font-weight: 400;">
@@ -185,11 +175,39 @@
           </a>
         </div>
       </div>
+      <!-- <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://newsroom22.herokuapp.com/">
+          <span class="caption">
+              <span class="caption-content" style="color:black; font-weight: 400;">
+                <h1 >NewsRoom</h1>
+                <p class="mb-0"><strong>Designed and developed a Django-based web app that allow users analyze the latest news stories. The goal of the app was to combat disinformation by crowd-sourcing news analysis</strong></p>
+              </span>
+          </span>
+          <img class="img-fluid" src="img/newsroom.jpg" alt="A map showing the shortest path between two points">
+          </a>
+        </div>
+      </div> -->
     </div>
   </section>
   
   <section class="experience" id="experience">
         <h2><a class="js-scroll-trigger" href="#experience">Relevant Experience</a></h2>
+        <div class="row">
+          <div class="col-lg-4">
+              <img src="img/claflin.png">
+          </div>
+          <div class="col-lg-4">
+            <h6><em>Writing Consultant</em></h6>
+            <h4>Claflin University</h4>
+            <h6> Orangeburg, South Carolina </h6>
+          </div>
+          <div class="col-lg-4 text">
+            <span>
+              Work with student writers and their papers to help them understand how to structure, organize, and develop well-written documents of any kind.
+            </span>
+          </div>
+        </div>
         <div class="row">
           <div class="col-lg-4">
               <img src="img/ub.jpg">
@@ -235,8 +253,7 @@
           </div>
           <div class="col-lg-4 text">
             <span> 
-              Successfully led the planning committee for the 2017 Student Professional Awareness Conference (SPAC). Managed the social media handles of the Student Branch and ensured publicity for our activities. Aided with C++, Arduino Micro-Controllers and Web Development instruction. In charge of recruiting efforts that led to a massive increase in membership
-            </span>
+              Successfully led the planning committee for the 2017 Student Professional Awareness Conference (SPAC). Aided with C++, Arduino Micro-Controllers and Web Development instruction. In charge of recruiting efforts that led to a massive increase in membership.            </span>
           </div>
         </div>
     </section>
