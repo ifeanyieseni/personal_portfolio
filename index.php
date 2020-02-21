@@ -37,11 +37,14 @@
         <li class="nav-item">
             <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>
+        <li class="nav-item" id="git">
+            <a href="./docs/MacVincent_Agha-Oko_resume.pdf" target="#">Resume</a>
+        </li>
         <li class="nav-item">
             <a href="https://github.com/macvincent" target="#">Github</a>
         </li>
-        <li class="nav-item" id="git">
-            <a href="./docs/MacVincent_Agha-Oko_resume.pdf" target="#">Resume</a>
+        <li class="nav-item">
+            <a href="https://medium.com/@macvincentaghaoko" target="#">Essays</a>
         </li>
       </ul>
   </nav>
@@ -76,6 +79,9 @@
       </li>
       <li class="sidebar-nav-item">
         <a href="https://github.com/macvincent" target="#">Github</a>
+      </li>
+      <li class="nav-item">
+            <a href="https://medium.com/@macvincentaghaoko" target="#">Essays</a>
       </li>
     </ul>
   </nav>
@@ -128,14 +134,14 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/macvincent/City-Planner">
+          <a class="portfolio-item" href="https://github.com/macvincent/Advanced_Lane_Line_Finding">
           <span class="caption">
               <span class="caption-content"  style="font-weight: 900; color: #f2f2f2;">
-                <h1>City Planner</h1>
-                <p class="mb-0"><strong>Programmed a multi-threaded traffic simulation showing vehicular movement in a real-world city. Visualized a 2D model of the live simulation by making use of the OpenCV library</strong></p>
+                <h1>Lane Line Finder</h1>
+                <p class="mb-0"><strong>Identifies the lane, radius of curvature, and vehicle position relative to the center of the lane, of a moving vehicle. Made use of the OpenCV and NumPy libraries. This project was one of those completed as part of my Udacity Self-Driving Engineer Nanodegree program.</strong></p>
               </span>
           </span>
-          <img class="img-fluid" src="img/city_planner.png" alt="A map showing vehicular traffic">
+          <img class="img-fluid" src="img/road.gif" alt="A simulation showing the lanes of a road being identified by a moving car">
           </a>
         </div>
         <div class="col-lg-6">
@@ -175,19 +181,19 @@
           </a>
         </div>
       </div>
-      <!-- <div class="row no-gutters">
+      <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://newsroom22.herokuapp.com/">
+          <a class="portfolio-item" href="https://github.com/macvincent/City-Planner">
           <span class="caption">
-              <span class="caption-content" style="color:black; font-weight: 400;">
-                <h1 >NewsRoom</h1>
-                <p class="mb-0"><strong>Designed and developed a Django-based web app that allow users analyze the latest news stories. The goal of the app was to combat disinformation by crowd-sourcing news analysis</strong></p>
+              <span class="caption-content"  style="font-weight: 900; color: #f2f2f2;">
+                <h1>City Planner</h1>
+                <p class="mb-0"><strong>Programmed a multi-threaded traffic simulation showing vehicular movement in a real-world city. Visualized a 2D model of the live simulation by making use of the OpenCV library</strong></p>
               </span>
           </span>
-          <img class="img-fluid" src="img/newsroom.jpg" alt="A map showing the shortest path between two points">
+          <img class="img-fluid" src="img/city_planner.png" alt="A map showing vehicular traffic">
           </a>
         </div>
-      </div> -->
+      </div>
     </div>
   </section>
   
@@ -270,41 +276,9 @@
             <label>Message</label>
             <textarea name="message" id="message" placeholder="Insert message..."></textarea>
                     
-            <input id="submit" name="Send" type="submit" value="Send">
+            <input id="submit" name="submit" type="submit" value="submit">
         </form>
     </div>
- <?php
-    $name = test_input($_POST['name']);
-    $email = test_input($_POST['email']);
-    $message = test_input($_POST['message']);
-    $message = str_replace("\n.", "\n..", $message);
-    $headers = array(
-    'From' => 'MacVincent',
-    'Reply-To' => 'macvincent@macvincent.com',
-    'X-Mailer' => 'PHP/' . phpversion()
-    );  
-    $to = 'macvincentaghaoko@gmail.com'; 
-    $subject = 'MacVincent.com';
-			
-    $body = "From: $name\nE-Mail: $email\nMessage:\n $message";
-    $reply = "Thank you $name for reaching out. I would get back to you shortly.\nMacVincent Agha-Oko";
-    if ($_POST['submit']) {
-      if (mail ($to, $subject, $body, $headers)) { 
-        if(mail($email, "Opinion Feedback", $reply, $headers)){
-              echo ' your message has been sent!</p>';
-        }
-      } else { 
-          echo 'something went wrong, go back and try again!</p>'; 
-      }
-	}
-    
-  function test_input($data) {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-      return $data;
-	}
-?>
   </section>
   <footer>Created by MacVincent™️</footer>
   <!-- Js Scripts -->
@@ -312,6 +286,40 @@
   <!--  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/src.js"></script>
+  <script>
+     <?php
+        if ($_POST['submit']) {
+          $name = test_input($_POST['name']);
+          $email = test_input($_POST['email']);
+          $message = test_input($_POST['message']);
+          $message = str_replace("\n.", "\n..", $message);
+          $headers = array(
+          'From' => 'MacVincent',
+          'Reply-To' => 'info@macvincent.com',
+          'X-Mailer' => 'PHP/' . phpversion()
+          );  
+          $to = 'macvincentaghaoko@gmail.com'; 
+          $subject = 'MacVincent.com';
+
+          $body = "From: $name\nE-Mail: $email\nMessage:\n $message";
+          $reply = "Thank you $name for reaching out. I would get back to you shortly.\nMacVincent Agha-Oko";
+          if (mail ($to, $subject, $body, $headers)) { 
+            if(mail($email, "Opinion Feedback", $reply, $headers)){
+                echo '$([document.documentElement, document.body]).animate({scrollTop: $("form").offset().top}, 2000);alert("Your message has been sent");';
+            }
+          } else {
+                echo '$([document.documentElement, document.body]).animate({scrollTop: $("form").offset().top}, 2000);alert("Something went wrong, go back and try again!");';
+          }
+        }
+
+      function test_input($data) {
+          $data = trim($data);
+          $data = stripslashes($data);
+          $data = htmlspecialchars($data);
+          return $data;
+        }
+    ?>
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
     <script>
@@ -321,10 +329,5 @@
 
       gtag('config', 'UA-142448634-1');
     </script>
-    <script>
-    <?php if ($_POST['submit'])
-      echo '$([document.documentElement, document.body]).animate({scrollTop: $("form").offset().top}, 2000);alert("Your message has been sent");';
-    ?>
-  </script>
 </body>
 </html>
