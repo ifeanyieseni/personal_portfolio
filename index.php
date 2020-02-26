@@ -145,14 +145,14 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/macvincent/CppND-System-Monitor">
+          <a class="portfolio-item" href="result.html">
             <span class="caption" style="color:white;">
               <span class="caption-content">
-                <h1>System Monitor</h1>
-                <p class="mb-0"><strong>Makes use of the ncurses library to build an interactive system-monitor process-viewer for a Linux system. It displays information about memory and CPU utilization, much similar to the Htop application. This project was one of those completed as part of my Udacity C++ Nanodegree program.</strong></p>
+                <h1>Traffic Sign Classifier</h1>
+                <p class="mb-0"><strong>Shows the application of a CNN in classifying traffic signs</strong></p>
               </span>
             </span>
-            <img class="img-fluid" src="img/system_monitor.png" alt="A robot hand">
+            <img class="img-fluid" src="img/traffic.png" alt="A robot hand">
           </a>
         </div>
       </div>
@@ -191,6 +191,17 @@
               </span>
           </span>
           <img class="img-fluid" src="img/city_planner.png" alt="A map showing vehicular traffic">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/macvincent/CppND-System-Monitor">
+            <span class="caption" style="color:white;">
+              <span class="caption-content">
+                <h1>System Monitor</h1>
+                <p class="mb-0"><strong>Makes use of the ncurses library to build an interactive system-monitor process-viewer for a Linux system. It displays information about memory and CPU utilization, much similar to the Htop application. This project was one of those completed as part of my Udacity C++ Nanodegree program.</strong></p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/system_monitor.png" alt="A robot hand">
           </a>
         </div>
       </div>
