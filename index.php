@@ -145,11 +145,11 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="result.html">
+          <a class="portfolio-item" href="https://github.com/macvincent/Traffic_Sign_Classifier">
             <span class="caption" style="color:white;">
               <span class="caption-content">
                 <h1>Traffic Sign Classifier</h1>
-                <p class="mb-0"><strong>Shows the application of a CNN in classifying traffic signs</strong></p>
+                <p class="mb-0"><strong>Shows the application of a CNN in classifying traffic signs and how pre-trained models can be adapted using transfer learning to lead to the faster development of more accurate networks.</strong></p>
               </span>
             </span>
             <img class="img-fluid" src="img/traffic.png" alt="A robot hand">
