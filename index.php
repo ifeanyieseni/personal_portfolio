@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta http-equiv="Refresh" content="0; URL=https://example.com/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hi, I am MacVincent Agha-Oko. I am a software developer with plans to one day change the face of the African tech industry.</title>
