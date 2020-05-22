@@ -6,11 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hi, I am MacVincent Agha-Oko. I am a software developer with plans to one day change the face of the African tech industry.</title>
   <link rel="icon" type="image/jpg" href="img/br.jpg" />
-  <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/min_style.css">
 </head>
 <body>
   <nav>
@@ -276,62 +271,18 @@
           </div>
         </div>
     </section>
-  <section class="contact" id="contact">        
-    <h2><a class="js-scroll-trigger" href="#contact">Contact</a></h2>
-    <div>
-        <form method="POST" name="feedback">
-            <label>Name</label>
-            <input name="name" id="name" placeholder="John Doe">
-                    
-            <label>Email</label>
-            <input name="email" id="email" type="email" placeholder="abc@example.com">
-                    
-            <label>Message</label>
-            <textarea name="message" id="message" placeholder="Insert message..."></textarea>
-                    
-            <input id="submit" name="submit" type="submit" value="submit">
-        </form>
-    </div>
-  </section>
+  <footer> Want to reach out? Send an <a href = "mailto:macvincentaghaoko@gmail.com?subject=Hey, We Think You Are Awesome!">email!</a></footer>
   <footer>Created by MacVincent™️</footer>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/min_style.css">
   <!-- Js Scripts -->
   <!--  -->
   <!--  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/src.js"></script>
-  <script>
-     <?php
-        if ($_POST['submit']) {
-          $name = test_input($_POST['name']);
-          $email = test_input($_POST['email']);
-          $message = test_input($_POST['message']);
-          $message = str_replace("\n.", "\n..", $message);
-          $headers = array(
-          'From' => 'MacVincent',
-          'Reply-To' => 'info@macvincent.com',
-          'X-Mailer' => 'PHP/' . phpversion()
-          );  
-          $to = 'macvincentaghaoko@gmail.com'; 
-          $subject = 'MacVincent.com';
-
-          $body = "From: $name\nE-Mail: $email\nMessage:\n $message";
-          $reply = "Thank you $name for reaching out. I would get back to you shortly.\nMacVincent Agha-Oko";
-          if (mail ($to, $subject, $body, $headers)) { 
-            if(mail($email, "Opinion Feedback", $reply, $headers)){
-                echo '$([document.documentElement, document.body]).animate({scrollTop: $("form").offset().top}, 2000);alert("Your message has been sent");';
-            }
-          } else {
-                echo '$([document.documentElement, document.body]).animate({scrollTop: $("form").offset().top}, 2000);alert("Something went wrong, go back and try again!");';
-          }
-        }
-
-      function test_input($data) {
-          $data = trim($data);
-          $data = stripslashes($data);
-          $data = htmlspecialchars($data);
-          return $data;
-        }
-    ?>
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142448634-1"></script>
