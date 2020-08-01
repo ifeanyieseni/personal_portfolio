@@ -21,32 +21,32 @@
     $(".menu-toggle").removeClass("active");
   });
 
-  //Check validity of form info using regEx
-  $('#submit').click(function(e){
-    $('p.error').remove();
-    let regTest = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
-    let email = regTest.test($("#email").val());
-    if(!email){
-      $('#email').addClass('error');
-      $('#email').after('<p class = "error">Incorrent Email</p>')
-    }else $('#email').removeClass('error');
+  // //Check validity of form info using regEx
+  // $('#submit').click(function(e){
+  //   $('p.error').remove();
+  //   let regTest = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+  //   let email = regTest.test($("#email").val());
+  //   if(!email){
+  //     $('#email').addClass('error');
+  //     $('#email').after('<p class = "error">Incorrent Email</p>')
+  //   }else $('#email').removeClass('error');
 
-    regTest = new RegExp('([a-z]){2,}');
-    let name = regTest.test($("#name").val());
-    if(!name){
-      $('#name').addClass('error');
-      $('#name').after('<p class = "error">Enter a valid name</p>')
-    }else $('#name').removeClass('error');
+  //   regTest = new RegExp('([a-z]){2,}');
+  //   let name = regTest.test($("#name").val());
+  //   if(!name){
+  //     $('#name').addClass('error');
+  //     $('#name').after('<p class = "error">Enter a valid name</p>')
+  //   }else $('#name').removeClass('error');
 
-    regTest = new RegExp('([a-z]){1,}');
-    let message = regTest.test($("#message").val());
-    if(!message){
-      $('#message').addClass('error');
-      $('#message').after('<p class = "error">Message box can\'t be empty!</p>')
-    }else $('#message').removeClass('error');
+  //   regTest = new RegExp('([a-z]){1,}');
+  //   let message = regTest.test($("#message").val());
+  //   if(!message){
+  //     $('#message').addClass('error');
+  //     $('#message').after('<p class = "error">Message box can\'t be empty!</p>')
+  //   }else $('#message').removeClass('error');
 
-    if(!(name && message && email))e.preventDefault();
-  });
+  //   if(!(name && message && email))e.preventDefault();
+  // });
 
   // Scroll to top button appear
   $('#button').fadeOut();
