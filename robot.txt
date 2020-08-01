@@ -1,6 +1,0 @@
-# robots.txt for http://www.macvincent.com/
-
-User-agent: *
-Disallow: /*/resume/*
-
-Sitemap: https://macvincent.com/sitemap.xml

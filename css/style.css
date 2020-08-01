@@ -142,7 +142,8 @@ h2 a, h2 a:hover, h2 a:active{
   background-color: white;
 }
 .text{
-  text-align: justify;
+  text-align: left;
+  padding-top: 20px;
 }
 .experience h6{
   font-weight: bold;
